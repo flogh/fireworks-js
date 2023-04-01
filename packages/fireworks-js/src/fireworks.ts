@@ -206,16 +206,10 @@ export class Fireworks {
 
     this.traces.push(
       new Trace({
-        x: (this.width * randomInt(rocketsPoint.min, rocketsPoint.max)) / 100,
-        y: this.height,
-        dx:
-          (this.mouse.x && mouse.move) || this.mouse.active
-            ? this.mouse.x
-            : randomInt(boundaries.x, boundaries.width - boundaries.x * 2),
-        dy:
-          (this.mouse.y && mouse.move) || this.mouse.active
-            ? this.mouse.y
-            : randomInt(boundaries.y, boundaries.height * 0.5),
+        x: boundaries.x,
+        y: boundaries.y,
+        dx: boundaries.x,
+        dy: boundaries.y,
         ctx: this.ctx,
         hue: randomInt(hue.min, hue.max),
         speed: traceSpeed,

@@ -1,5 +1,5 @@
 {
-  "name": "@fireworks-js/angular",
+  "name": "flogh-fireworks-js-angular",
   "version": "2.10.2",
   "description": "A simple fireworks library!",
   "homepage": "https://fireworks.js.org",
@@ -27,7 +27,7 @@
     "@angular/core": "^14.0.0"
   },
   "dependencies": {
-    "fireworks-js": "workspace:2.10.2",
+    "flogh-fireworks-js": "2.10.2",
     "tslib": "2.5.0"
   }
 }
